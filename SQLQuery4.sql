@@ -1,0 +1,2 @@
+﻿DELETE FROM Patients 
+WHERE PatientID IN (1002, 2002, 3002,3003);

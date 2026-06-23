@@ -1,0 +1,1 @@
+﻿ALTER TABLE Patients ADD Email NVARCHAR(100) NULL;

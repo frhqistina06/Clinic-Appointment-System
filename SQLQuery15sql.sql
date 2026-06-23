@@ -1,0 +1,16 @@
+﻿-- ✅ TAMBAH COLUMN UNTUK PAYMENT
+ALTER TABLE Appointments ADD PaymentStatus NVARCHAR(50) DEFAULT 'Unpaid';
+ALTER TABLE Appointments ADD PaymentMethod NVARCHAR(50) NULL;
+ALTER TABLE Appointments ADD PaymentDate DATETIME NULL;
+ALTER TABLE Appointments ADD BankName NVARCHAR(100) NULL;
+ALTER TABLE Appointments ADD Price DECIMAL(10,2) NULL;
+
+-- ✅ TAMBAH FOREIGN KEY (OPTIONAL)
+ALTER TABLE Appointments ADD CONSTRAINT FK_Appointments_Patients 
+    FOREIGN KEY (PatientID) REFERENCES Patients(PatientID);
+
+ALTER TABLE Appointments ADD CONSTRAINT FK_Appointments_Doctors 
+    FOREIGN KEY (DoctorID) REFERENCES Doctors(DoctorID);
+
+-- ✅ CHECK TABLE STRUCTURE
+SELECT * FROM Appointments;

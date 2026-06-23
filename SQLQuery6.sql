@@ -1,0 +1,2 @@
+﻿-- CHECK TABLE APPOINTMENTS
+SELECT * FROM Appointments;
