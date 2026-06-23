@@ -519,7 +519,7 @@ namespace ClinicAppointmentSystem
             }
         }
 
-        private void reportToolStripMenuItem_Click(object sender, EventArgs e)
+        private void viewReportToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FormViewReport reportForm = new FormViewReport();
             reportForm.Show();

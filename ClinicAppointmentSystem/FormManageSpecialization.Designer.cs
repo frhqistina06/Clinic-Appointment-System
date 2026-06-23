@@ -36,7 +36,6 @@
             this.appointmentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.specializationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.viewReportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.reportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.logOutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.txtSpecialization = new System.Windows.Forms.TextBox();
             this.lblFee = new System.Windows.Forms.Label();
@@ -93,45 +92,37 @@
             // patientToolStripMenuItem
             // 
             this.patientToolStripMenuItem.Name = "patientToolStripMenuItem";
-            this.patientToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.patientToolStripMenuItem.Size = new System.Drawing.Size(185, 26);
             this.patientToolStripMenuItem.Text = "Patient";
             this.patientToolStripMenuItem.Click += new System.EventHandler(this.patientToolStripMenuItem_Click);
             // 
             // doctorToolStripMenuItem
             // 
             this.doctorToolStripMenuItem.Name = "doctorToolStripMenuItem";
-            this.doctorToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.doctorToolStripMenuItem.Size = new System.Drawing.Size(185, 26);
             this.doctorToolStripMenuItem.Text = "Doctor";
             this.doctorToolStripMenuItem.Click += new System.EventHandler(this.doctorToolStripMenuItem_Click);
             // 
             // appointmentToolStripMenuItem
             // 
             this.appointmentToolStripMenuItem.Name = "appointmentToolStripMenuItem";
-            this.appointmentToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.appointmentToolStripMenuItem.Size = new System.Drawing.Size(185, 26);
             this.appointmentToolStripMenuItem.Text = "Appointment";
             this.appointmentToolStripMenuItem.Click += new System.EventHandler(this.appointmentToolStripMenuItem_Click);
             // 
             // specializationToolStripMenuItem
             // 
             this.specializationToolStripMenuItem.Name = "specializationToolStripMenuItem";
-            this.specializationToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.specializationToolStripMenuItem.Size = new System.Drawing.Size(185, 26);
             this.specializationToolStripMenuItem.Text = "Specialization";
             this.specializationToolStripMenuItem.Click += new System.EventHandler(this.specializationToolStripMenuItem_Click);
             // 
             // viewReportToolStripMenuItem
             // 
-            this.viewReportToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.reportToolStripMenuItem});
             this.viewReportToolStripMenuItem.Name = "viewReportToolStripMenuItem";
-            this.viewReportToolStripMenuItem.Size = new System.Drawing.Size(55, 24);
-            this.viewReportToolStripMenuItem.Text = "View";
-            // 
-            // reportToolStripMenuItem
-            // 
-            this.reportToolStripMenuItem.Name = "reportToolStripMenuItem";
-            this.reportToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.reportToolStripMenuItem.Text = "Report";
-            this.reportToolStripMenuItem.Click += new System.EventHandler(this.reportToolStripMenuItem_Click);
+            this.viewReportToolStripMenuItem.Size = new System.Drawing.Size(104, 24);
+            this.viewReportToolStripMenuItem.Text = "View Report";
+            this.viewReportToolStripMenuItem.Click += new System.EventHandler(this.viewReportToolStripMenuItem_Click);
             // 
             // logOutToolStripMenuItem
             // 
@@ -142,7 +133,7 @@
             // 
             // txtSpecialization
             // 
-            this.txtSpecialization.Location = new System.Drawing.Point(199, 288);
+            this.txtSpecialization.Location = new System.Drawing.Point(552, 152);
             this.txtSpecialization.Name = "txtSpecialization";
             this.txtSpecialization.Size = new System.Drawing.Size(204, 22);
             this.txtSpecialization.TabIndex = 85;
@@ -152,7 +143,7 @@
             this.lblFee.AutoSize = true;
             this.lblFee.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFee.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.lblFee.Location = new System.Drawing.Point(95, 321);
+            this.lblFee.Location = new System.Drawing.Point(448, 185);
             this.lblFee.Name = "lblFee";
             this.lblFee.Size = new System.Drawing.Size(80, 19);
             this.lblFee.TabIndex = 84;
@@ -163,7 +154,7 @@
             this.lblSpecialization.AutoSize = true;
             this.lblSpecialization.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSpecialization.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.lblSpecialization.Location = new System.Drawing.Point(58, 289);
+            this.lblSpecialization.Location = new System.Drawing.Point(411, 153);
             this.lblSpecialization.Name = "lblSpecialization";
             this.lblSpecialization.Size = new System.Drawing.Size(117, 19);
             this.lblSpecialization.TabIndex = 83;
@@ -240,13 +231,13 @@
             this.dgvSpecialization.Name = "dgvSpecialization";
             this.dgvSpecialization.RowHeadersWidth = 51;
             this.dgvSpecialization.RowTemplate.Height = 24;
-            this.dgvSpecialization.Size = new System.Drawing.Size(761, 130);
+            this.dgvSpecialization.Size = new System.Drawing.Size(353, 233);
             this.dgvSpecialization.TabIndex = 79;
             this.dgvSpecialization.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvSpecialization_CellContentClick);
             // 
             // txtFee
             // 
-            this.txtFee.Location = new System.Drawing.Point(199, 321);
+            this.txtFee.Location = new System.Drawing.Point(552, 185);
             this.txtFee.Name = "txtFee";
             this.txtFee.Size = new System.Drawing.Size(204, 22);
             this.txtFee.TabIndex = 101;
@@ -307,7 +298,6 @@
         private System.Windows.Forms.ToolStripMenuItem appointmentToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem specializationToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem viewReportToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem reportToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem logOutToolStripMenuItem;
         private System.Windows.Forms.TextBox txtSpecialization;
         private System.Windows.Forms.Label lblFee;

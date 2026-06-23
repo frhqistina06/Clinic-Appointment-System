@@ -340,5 +340,12 @@ namespace ClinicAppointmentSystem
                 this.Hide();
             }
         }
+
+        private void viewReportToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormViewReport reportForm = new FormViewReport();
+            reportForm.Show();
+            this.Hide();
+        }
     }
 }

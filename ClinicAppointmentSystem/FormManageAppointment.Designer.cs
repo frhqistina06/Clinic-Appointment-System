@@ -35,7 +35,6 @@
             this.appointmentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.specializationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.viewReportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.reportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.logOutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lblTitle = new System.Windows.Forms.Label();
             this.lblTime = new System.Windows.Forms.Label();
@@ -72,7 +71,7 @@
             this.logOutToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(800, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(800, 30);
             this.menuStrip1.TabIndex = 93;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -90,40 +89,33 @@
             // patientToolStripMenuItem
             // 
             this.patientToolStripMenuItem.Name = "patientToolStripMenuItem";
-            this.patientToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.patientToolStripMenuItem.Size = new System.Drawing.Size(185, 26);
             this.patientToolStripMenuItem.Text = "Patient";
             // 
             // doctorToolStripMenuItem
             // 
             this.doctorToolStripMenuItem.Name = "doctorToolStripMenuItem";
-            this.doctorToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.doctorToolStripMenuItem.Size = new System.Drawing.Size(185, 26);
             this.doctorToolStripMenuItem.Text = "Doctor";
             // 
             // appointmentToolStripMenuItem
             // 
             this.appointmentToolStripMenuItem.Name = "appointmentToolStripMenuItem";
-            this.appointmentToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.appointmentToolStripMenuItem.Size = new System.Drawing.Size(185, 26);
             this.appointmentToolStripMenuItem.Text = "Appointment";
             // 
             // specializationToolStripMenuItem
             // 
             this.specializationToolStripMenuItem.Name = "specializationToolStripMenuItem";
-            this.specializationToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.specializationToolStripMenuItem.Size = new System.Drawing.Size(185, 26);
             this.specializationToolStripMenuItem.Text = "Specialization";
             // 
             // viewReportToolStripMenuItem
             // 
-            this.viewReportToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.reportToolStripMenuItem});
             this.viewReportToolStripMenuItem.Name = "viewReportToolStripMenuItem";
-            this.viewReportToolStripMenuItem.Size = new System.Drawing.Size(55, 24);
-            this.viewReportToolStripMenuItem.Text = "View";
-            // 
-            // reportToolStripMenuItem
-            // 
-            this.reportToolStripMenuItem.Name = "reportToolStripMenuItem";
-            this.reportToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.reportToolStripMenuItem.Text = "Report";
+            this.viewReportToolStripMenuItem.Size = new System.Drawing.Size(104, 26);
+            this.viewReportToolStripMenuItem.Text = "View Report";
+            this.viewReportToolStripMenuItem.Click += new System.EventHandler(this.viewReportToolStripMenuItem_Click);
             // 
             // logOutToolStripMenuItem
             // 
@@ -189,6 +181,7 @@
             this.txtID.Name = "txtID";
             this.txtID.Size = new System.Drawing.Size(204, 22);
             this.txtID.TabIndex = 85;
+            // 
             // lblPatientID
             // 
             this.lblPatientID.AutoSize = true;
@@ -391,7 +384,6 @@
         private System.Windows.Forms.ToolStripMenuItem appointmentToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem specializationToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem viewReportToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem reportToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem logOutToolStripMenuItem;
         private System.Windows.Forms.Label lblTitle;
         private System.Windows.Forms.Label lblTime;

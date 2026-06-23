@@ -51,7 +51,6 @@
             this.appointmentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.specializationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.viewReportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.reportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.logOutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cbSpecialization = new System.Windows.Forms.ComboBox();
             this.btnDelete = new System.Windows.Forms.Button();
@@ -247,44 +246,36 @@
             // patientToolStripMenuItem
             // 
             this.patientToolStripMenuItem.Name = "patientToolStripMenuItem";
-            this.patientToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.patientToolStripMenuItem.Size = new System.Drawing.Size(185, 26);
             this.patientToolStripMenuItem.Text = "Patient";
             this.patientToolStripMenuItem.Click += new System.EventHandler(this.patientToolStripMenuItem_Click);
             // 
             // doctorToolStripMenuItem
             // 
             this.doctorToolStripMenuItem.Name = "doctorToolStripMenuItem";
-            this.doctorToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.doctorToolStripMenuItem.Size = new System.Drawing.Size(185, 26);
             this.doctorToolStripMenuItem.Text = "Doctor";
             // 
             // appointmentToolStripMenuItem
             // 
             this.appointmentToolStripMenuItem.Name = "appointmentToolStripMenuItem";
-            this.appointmentToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.appointmentToolStripMenuItem.Size = new System.Drawing.Size(185, 26);
             this.appointmentToolStripMenuItem.Text = "Appointment";
             this.appointmentToolStripMenuItem.Click += new System.EventHandler(this.appointmentToolStripMenuItem_Click);
             // 
             // specializationToolStripMenuItem
             // 
             this.specializationToolStripMenuItem.Name = "specializationToolStripMenuItem";
-            this.specializationToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.specializationToolStripMenuItem.Size = new System.Drawing.Size(185, 26);
             this.specializationToolStripMenuItem.Text = "Specialization";
             this.specializationToolStripMenuItem.Click += new System.EventHandler(this.specializationToolStripMenuItem_Click);
             // 
             // viewReportToolStripMenuItem
             // 
-            this.viewReportToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.reportToolStripMenuItem});
             this.viewReportToolStripMenuItem.Name = "viewReportToolStripMenuItem";
-            this.viewReportToolStripMenuItem.Size = new System.Drawing.Size(55, 24);
-            this.viewReportToolStripMenuItem.Text = "View";
-            // 
-            // reportToolStripMenuItem
-            // 
-            this.reportToolStripMenuItem.Name = "reportToolStripMenuItem";
-            this.reportToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.reportToolStripMenuItem.Text = "Report";
-            this.reportToolStripMenuItem.Click += new System.EventHandler(this.reportToolStripMenuItem_Click);
+            this.viewReportToolStripMenuItem.Size = new System.Drawing.Size(104, 24);
+            this.viewReportToolStripMenuItem.Text = "View Report";
+            this.viewReportToolStripMenuItem.Click += new System.EventHandler(this.viewReportToolStripMenuItem_Click);
             // 
             // logOutToolStripMenuItem
             // 
@@ -407,7 +398,6 @@
         private System.Windows.Forms.ToolStripMenuItem appointmentToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem specializationToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem viewReportToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem reportToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem logOutToolStripMenuItem;
         private System.Windows.Forms.ComboBox cbSpecialization;
         private System.Windows.Forms.Button btnDelete;

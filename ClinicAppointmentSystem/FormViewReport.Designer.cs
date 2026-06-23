@@ -42,7 +42,6 @@
             this.appointmentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.specializationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.viewReportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.reportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.logOutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.btnSearch = new System.Windows.Forms.Button();
             this.chartStatus = new System.Windows.Forms.DataVisualization.Charting.Chart();
@@ -89,42 +88,31 @@
             this.doctorToolStripMenuItem.Name = "doctorToolStripMenuItem";
             this.doctorToolStripMenuItem.Size = new System.Drawing.Size(185, 26);
             this.doctorToolStripMenuItem.Text = "Doctor";
-       
             // 
             // appointmentToolStripMenuItem
             // 
             this.appointmentToolStripMenuItem.Name = "appointmentToolStripMenuItem";
             this.appointmentToolStripMenuItem.Size = new System.Drawing.Size(185, 26);
             this.appointmentToolStripMenuItem.Text = "Appointment";
-          
             // 
             // specializationToolStripMenuItem
             // 
             this.specializationToolStripMenuItem.Name = "specializationToolStripMenuItem";
             this.specializationToolStripMenuItem.Size = new System.Drawing.Size(185, 26);
             this.specializationToolStripMenuItem.Text = "Specialization";
-
             // 
             // viewReportToolStripMenuItem
             // 
-            this.viewReportToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.reportToolStripMenuItem});
             this.viewReportToolStripMenuItem.Name = "viewReportToolStripMenuItem";
-            this.viewReportToolStripMenuItem.Size = new System.Drawing.Size(55, 24);
-            this.viewReportToolStripMenuItem.Text = "View";
-            // 
-            // reportToolStripMenuItem
-            // 
-            this.reportToolStripMenuItem.Name = "reportToolStripMenuItem";
-            this.reportToolStripMenuItem.Size = new System.Drawing.Size(137, 26);
-            this.reportToolStripMenuItem.Text = "Report";
+            this.viewReportToolStripMenuItem.Size = new System.Drawing.Size(104, 24);
+            this.viewReportToolStripMenuItem.Text = "View Report";
+            this.viewReportToolStripMenuItem.Click += new System.EventHandler(this.viewReportToolStripMenuItem_Click);
             // 
             // logOutToolStripMenuItem
             // 
             this.logOutToolStripMenuItem.Name = "logOutToolStripMenuItem";
             this.logOutToolStripMenuItem.Size = new System.Drawing.Size(76, 24);
             this.logOutToolStripMenuItem.Text = "Log Out";
-           
             // 
             // btnSearch
             // 
@@ -227,7 +215,6 @@
         private System.Windows.Forms.ToolStripMenuItem appointmentToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem specializationToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem viewReportToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem reportToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem logOutToolStripMenuItem;
         private System.Windows.Forms.Button btnSearch;
         private System.Windows.Forms.DataVisualization.Charting.Chart chartStatus;
