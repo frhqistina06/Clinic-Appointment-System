@@ -101,7 +101,6 @@
             this.chkAgree.TabIndex = 20;
             this.chkAgree.Text = "I Agree To The Term and Policy";
             this.chkAgree.UseVisualStyleBackColor = true;
-            this.chkAgree.CheckedChanged += new System.EventHandler(this.ChkAgreeTerms_CheckedChanged);
             // 
             // txtCVV
             // 
@@ -129,7 +128,6 @@
             this.txtExpiryDate.Name = "txtExpiryDate";
             this.txtExpiryDate.Size = new System.Drawing.Size(204, 22);
             this.txtExpiryDate.TabIndex = 17;
-            this.txtExpiryDate.TextChanged += new System.EventHandler(this.TxtExpiryDate_TextChanged);
             // 
             // label2
             // 
@@ -149,7 +147,6 @@
             this.txtCardNumber.Name = "txtCardNumber";
             this.txtCardNumber.Size = new System.Drawing.Size(204, 22);
             this.txtCardNumber.TabIndex = 15;
-            this.txtCardNumber.TextChanged += new System.EventHandler(this.TxtCardNumber_TextChanged);
             // 
             // label1
             // 
@@ -223,7 +220,6 @@
             this.radCreditCard.TabStop = true;
             this.radCreditCard.Text = "Credit/Debit Card";
             this.radCreditCard.UseVisualStyleBackColor = true;
-            this.radCreditCard.CheckedChanged += new System.EventHandler(this.RadCreditCard_CheckedChanged);
             // 
             // radFPX
             // 
@@ -235,7 +231,6 @@
             this.radFPX.TabStop = true;
             this.radFPX.Text = "FPX (Online Banking)";
             this.radFPX.UseVisualStyleBackColor = true;
-            this.radFPX.CheckedChanged += new System.EventHandler(this.RadFPX_CheckedChanged);
             // 
             // radEWallet
             // 
@@ -247,7 +242,6 @@
             this.radEWallet.TabStop = true;
             this.radEWallet.Text = "E-Wallet (Touch \'n Go)";
             this.radEWallet.UseVisualStyleBackColor = true;
-            this.radEWallet.CheckedChanged += new System.EventHandler(this.RadEWallet_CheckedChanged);
             // 
             // label5
             // 
@@ -275,7 +269,6 @@
             this.btnCompleted.TabIndex = 38;
             this.btnCompleted.Text = "Completed";
             this.btnCompleted.UseVisualStyleBackColor = true;
-            this.btnCompleted.Click += new System.EventHandler(this.BtnProcessPayment_Click);
             // 
             // btnBack
             // 
@@ -285,7 +278,6 @@
             this.btnBack.TabIndex = 39;
             this.btnBack.Text = "Back";
             this.btnBack.UseVisualStyleBackColor = true;
-            this.btnBack.Click += new System.EventHandler(this.BtnBack_Click);
             // 
             // FormPayment
             // 

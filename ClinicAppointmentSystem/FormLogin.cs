@@ -59,14 +59,15 @@ namespace ClinicAppointmentSystem
                 return;
             }
 
-            // ✅ LOGIN WITH BOTH EMAIL AND USERNAME
             string query = @"SELECT Password FROM Patients 
-                            WHERE Email = @Email 
-                            AND Username = @Username";
+                 WHERE Email = @Email 
+                 AND Username = @Username 
+                 AND Password = @Password";
 
             SqlParameter[] parameters = {
                 new SqlParameter("@Email", txtEmail.Text.Trim()),
-                new SqlParameter("@Username", txtUsername.Text.Trim())
+                new SqlParameter("@Username", txtUsername.Text.Trim()),
+                new SqlParameter("@Password", txtPassword.Text.Trim())
             };
 
             try
@@ -75,23 +76,15 @@ namespace ClinicAppointmentSystem
 
                 if (dt.Rows.Count > 0)
                 {
-
-                    string storedPassword = dt.Rows[0]["Password"].ToString();
-
-                    // ✅ Case-sensitive comparison in C#
-                    if (storedPassword == txtPassword.Text)
-                    {
-                        // ✅ Login successful - open dashboard
-                        MessageBox.Show("Login successful! Welcome back, " + txtUsername.Text + "!",
+                    // ✅ Login successful - open dashboard
+                    MessageBox.Show("Login successful! Welcome back, " + txtUsername.Text + "!",
                         "Success",
                         MessageBoxButtons.OK,
                         MessageBoxIcon.Information);
 
-                        FormPatientDashboard patientDashboard = new FormPatientDashboard();
-                        patientDashboard.Show();
-                        this.Hide();
-                    }
-
+                    FormPatientDashboard patientDashboard = new FormPatientDashboard();
+                    patientDashboard.Show();
+                    this.Hide();
                 }
                 else
                 {
@@ -149,7 +142,7 @@ namespace ClinicAppointmentSystem
         {
             FormMainPage mainPage = new FormMainPage();
             mainPage.Show();
-            this.Close();
+            this.Hide();
         }
 
         private void FormLogin_Load(object sender, EventArgs e)
